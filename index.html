@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACG Body Shape Calculator</title>
+  <meta name="description" content="A responsive body shape calculator built with HTML, CSS, and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="acg-body-calculator-section" data-acg-result-card-calculator>
+
+      <div class="acg-body-calculator-header">
+        <span class="acg-body-calculator-label">BODY SHAPE CALCULATOR</span>
+        <h1 class="acg-body-calculator-title">Find Your Body Shape</h1>
+        <p class="acg-body-calculator-text">
+          Enter your measurements below to discover your body shape and find styles that flatter your proportions.
+        </p>
+      </div>
+
+      <div class="acg-body-calculator-wrapper">
+        <div class="acg-body-calculator-form">
+          <p class="acg-measurement-note">Measurements in inches</p>
+
+          <div class="acg-field">
+            <label for="acg-shoulders">Shoulders</label>
+            <div class="acg-input-wrap">
+              <input id="acg-shoulders" placeholder="38" max="80" min="20" type="number" data-acg-measurement="shoulders">
+              <span class="acg-field-status" aria-hidden="true">✓</span>
+            </div>
+          </div>
+
+          <div class="acg-field">
+            <label for="acg-bust">Bust</label>
+            <div class="acg-input-wrap">
+              <input id="acg-bust" placeholder="36" max="80" min="20" type="number" data-acg-measurement="bust">
+              <span class="acg-field-status" aria-hidden="true">✓</span>
+            </div>
+          </div>
+
+          <div class="acg-field">
+            <label for="acg-waist">Waist</label>
+            <div class="acg-input-wrap">
+              <input id="acg-waist" placeholder="30" max="70" min="15" type="number" data-acg-measurement="waist">
+              <span class="acg-field-status" aria-hidden="true">✓</span>
+            </div>
+          </div>
+
+          <div class="acg-field">
+            <label for="acg-hips">Hips</label>
+            <div class="acg-input-wrap">
+              <input id="acg-hips" placeholder="40" max="80" min="20" type="number" data-acg-measurement="hips">
+              <span class="acg-field-status" aria-hidden="true">✓</span>
+            </div>
+          </div>
+
+          <button class="acg-calc-btn" data-acg-calculate type="button">Calculate Body Shape</button>
+        </div>
+
+        <div class="acg-body-visual">
+          <div class="acg-body-image-wrap">
+            <img
+              class="acg-body-image"
+              alt="Body shape silhouette"
+              src="https://cdn.shopify.com/s/files/1/0552/2705/6309/files/Body_Calculator_Silhouette.png?v=1785619691">
+          </div>
+        </div>
+      </div>
+
+      <section class="acg-result-box acg-detailed-result" data-acg-result hidden aria-live="polite">
+        <div class="acg-result-overview">
+          <p class="acg-result-label">YOUR BODY SHAPE</p>
+          <div class="acg-result-identity">
+            <span class="acg-result-icon" data-acg-result-icon aria-hidden="true"></span>
+            <div>
+              <h2 data-acg-result-title>Your Shape</h2>
+              <p data-acg-result-description></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="acg-result-column">
+          <h3><span class="acg-result-heading-icon acg-positive" aria-hidden="true">✓</span>Your Features</h3>
+          <ul data-acg-result-features></ul>
+        </div>
+
+        <div class="acg-result-column acg-result-recommendations">
+          <div>
+            <h3><span class="acg-result-heading-icon acg-warm" aria-hidden="true">♡</span>Flattering Styles</h3>
+            <ul class="acg-style-list acg-style-list-yes" data-acg-result-flattering></ul>
+          </div>
+          <div>
+            <h3><span class="acg-result-heading-icon acg-negative" aria-hidden="true">×</span>Styles To Avoid</h3>
+            <ul class="acg-style-list acg-style-list-no" data-acg-result-avoid></ul>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
