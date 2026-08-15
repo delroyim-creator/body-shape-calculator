@@ -17,11 +17,11 @@ body {
   box-sizing: border-box;
   margin: 40px auto;
   max-width: 1050px;
-  padding: 32px;
+  padding: 42px;
 }
 
 .acg-body-calculator-section .acg-body-calculator-header {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
