@@ -52,7 +52,7 @@ body {
   align-items: center;
   display: grid;
   gap: 10px;
-  grid-template-columns: 330px 330px;
+  grid-template-columns: 330px 350px;
   justify-content: center;
 }
 
