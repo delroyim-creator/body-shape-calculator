@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
   margin: 40px auto;
   max-width: 1050px;
-  padding: 42px;
+  padding: 32px;
 }
 
 .acg-body-calculator-section .acg-body-calculator-header {
@@ -51,8 +51,8 @@ body {
 .acg-body-calculator-section .acg-body-calculator-wrapper {
   align-items: center;
   display: grid;
-  gap: 30px;
-  grid-template-columns: 340px 360px;
+  gap: 10px;
+  grid-template-columns: 320px 320px;
   justify-content: center;
 }
 
