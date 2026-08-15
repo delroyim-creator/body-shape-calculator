@@ -52,7 +52,8 @@ body {
   align-items: center;
   display: grid;
   gap: 30px;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 340px 360px;
+  justify-content: center;
 }
 
 .acg-body-calculator-section .acg-body-calculator-form {
